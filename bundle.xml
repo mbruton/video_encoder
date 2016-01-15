@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <adapt_framework>
     <bundle>
-        <label>Video Encoder</label>
+        <label>Adapt Video Encoder</label>
         <name>video_encoder</name>
         <version>1.0.0</version>
         <type>extension</type>
-        <namespace>/extensions/video_encoder</namespace>
+        <namespace>\adapt\video\encoder</namespace>
         <description>Provides an easy to use video encoder</description>
         <copyright>2015 Adapt Framework</copyright>
         <license>MIT</license>
         <website>http://www.adaptframework.com/documentation/extensions/video</website>
         <depends_on>
-            <bundle>ffmpeg_wrapper</bundle>
+            <bundle>
+                <name>ffmpeg_wrapper</name>
+                <version>1.0</version>
+            </bundle>
+            <bundle>
+                <name>adapt</name>
+                <version>1.0</version>
+            </bundle>
         </depends_on>
     </bundle>
 </adapt_framework>
